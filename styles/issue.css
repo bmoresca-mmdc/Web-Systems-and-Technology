@@ -55,7 +55,7 @@ nav ul li a:hover {
 
 /* Hero Section Styles */
 .hero {
-    background-image: url('../images/night-sky.jpg'); 
+    background-image: url('../images/night.jpg'); 
     background-size: cover;
     background-position: center;
     position: relative;
