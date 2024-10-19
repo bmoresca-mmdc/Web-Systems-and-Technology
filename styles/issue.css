@@ -87,6 +87,16 @@ nav ul li a:hover {
     border-radius: 10px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 }
+.help-content {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
 
 
 
@@ -198,4 +208,38 @@ footer .social a:hover {
 .call-to-action:hover {
     background-color: #0056b3;
     cursor: pointer;
+}
+/* Subscription Form Styles */
+#subscribe-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin-top: 20px;
+}
+
+#subscribe-form input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+#subscribe-form button {
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+#subscribe-form button:hover {
+    background-color: #0056b3;
+}
+
+#subscribe-status {
+    margin-top: 10px;
+    font-size: 1.1em;
 }
