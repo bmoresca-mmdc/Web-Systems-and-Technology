@@ -4,70 +4,122 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>How You Can Help - Light Pollution</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="styles/issue.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
+
     <!-- Header -->
-    <header>
-        <div class="logo">
-            <h1>LightPollutionAwareness.Com</h1>
+    <header class="bg-dark text-white p-3">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div class="logo">
+                <h1 class="h4 mb-0">LightPollutionAwareness.Com</h1>
+            </div>
+            <nav class="navbar navbar-expand-lg">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link text-white" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="issue.html">What's the Issue?</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="help.html">How You Can Help</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="map.html">Interactive Map</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="resources.html">Resources</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
         </div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="issue.html">What's the Issue?</a></li>
-                <li><a href="help.html">How You Can Help</a></li>
-                <li><a href="map.html">Interactive Map</a></li>
-                <li><a href="resources.html">Resources</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
     </header>
 
     <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-overlay">
-            <h2>How You Can Help Reduce Light Pollution</h2>
+    <section class="hero text-center text-white py-5" style="background-image: url('images/skymore.jpg'); background-size: cover; background-position: center;">
+        <div class="container">
+            <h2>How You Can I Help Reduce Light Pollution?</h2>
             <p>Taking simple actions can make a big difference in reducing light pollution and preserving the night sky.</p>
         </div>
     </section>
 
     <!-- Help Section -->
-    <section class="help-content">
-        
-        <div class="text-column">
-            <h2>Use Outdoor Lighting Responsibly</h2>
-            <p>Install outdoor lighting that is shielded and directed downward to avoid light trespass and glare. Consider using dimmers, motion sensors, or timers.</p>
-        </div>
-        <div class="text-column">
-            <h2>Advocate for Dark-Sky Friendly Policies</h2>
-            <p>Encourage local government to adopt regulations that minimize light pollution, such as promoting dark-sky compliant streetlights and outdoor lighting.</p>
-        </div>
-        <div class="text-column">
-            <h2>Become an Advocate</h2>
-            <p>Stay informed on how you can help reduce light pollution and get the latest news and tips.</p>
-            <form id="subscribe-form">
-                <input type="email" id="subscribe-email" placeholder="Your Email" required>
-                <button type="submit">Subscribe</button>
-            </form>
-            <p id="subscribe-status"></p> 
+    <section class="help-content container my-5">
+        <div class="row text-center">
+            <div class="col-md-6">
+                <h2>Use Outdoor Lighting Responsibly</h2>
+                <p>Install outdoor lighting that is shielded and directed downward to avoid light trespass and glare. Consider using dimmers, motion sensors, or timers.</p>
+            </div>
+            <div class="col-md-6">
+                <h2>Advocate for Dark-Sky Friendly Policies</h2>
+                <p>Encourage local government to adopt regulations that minimize light pollution, such as promoting dark-sky compliant streetlights and outdoor lighting.</p>
+            </div>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer>
-        <footer>
-            <p>© 2024 Light Pollution Awareness. All rights reserved.</p>
-            <div class="social">
-                <a href="#">Twitter</a> |
-                <a href="#">Facebook</a> |
-                <a href="#">Instagram</a>
+    <!-- Advocate Form Section -->
+    <section class="help-content container my-5">
+        <h2 class="text-center mb-4">Become an Advocate</h2>
+        <form id="advocate-form" class="row g-3 needs-validation" novalidate>
+            <div class="col-md-6">
+                <label for="firstName" class="form-label">First Name</label>
+                <input type="text" class="form-control" id="firstName" required>
+                <div class="invalid-feedback">Please provide your first name.</div>
             </div>
+            <div class="col-md-6">
+                <label for="lastName" class="form-label">Last Name</label>
+                <input type="text" class="form-control" id="lastName" required>
+                <div class="invalid-feedback">Please provide your last name.</div>
+            </div>
+            <div class="col-md-6">
+                <label for="city" class="form-label">City</label>
+                <input type="text" class="form-control" id="city" required>
+                <div class="invalid-feedback">Please provide your city.</div>
+            </div>
+            <div class="col-md-4">
+                <label for="province" class="form-label">Province</label>
+                <input type="text" class="form-control" id="province" required>
+                <div class="invalid-feedback">Please provide your province.</div>
+            </div>
+            <div class="col-md-2">
+                <label for="zip" class="form-label">Zip Code</label>
+                <input type="text" class="form-control" id="zip" required>
+                <div class="invalid-feedback">Please provide your zip code.</div>
+            </div>
+            <div class="col-12">
+                <button class="btn btn-primary" type="submit">Submit</button>
+            </div>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>© 2024 Light Pollution Awareness. All rights reserved.</p>
+        <div class="social">
+            <a href="#" class="text-white mx-2">Twitter</a> |
+            <a href="#" class="text-white mx-2">Facebook</a> |
+            <a href="#" class="text-white mx-2">Instagram</a>
+        </div>
     </footer>
 
-    <!-- Include external JS file -->
-    <script src="scripts/script.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JS for Form Validation -->
+    <script>
+        // JavaScript for form validation
+        (function () {
+            'use strict'
+            const forms = document.querySelectorAll('.needs-validation')
+
+            Array.from(forms).forEach(function (form) {
+                form.addEventListener('submit', function (event) {
+                    if (!form.checkValidity()) {
+                        event.preventDefault()
+                        event.stopPropagation()
+                    }
+
+                    form.classList.add('was-validated')
+                }, false)
+            })
+        })()
+    </script>
 </body>
 </html>

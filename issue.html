@@ -4,121 +4,123 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>What is the Issue - Light Pollution</title>
-    <link rel="stylesheet" href="styles\issue.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles/issue.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
- <!-- Header -->
- <header>
-    <div class="logo">
-        <h1>LightPollutionAwareness.Com</h1>
+
+<!-- Header -->
+<header class="bg-dark text-white p-3">
+    <div class="container d-flex justify-content-between align-items-center">
+        <div class="logo">
+            <h1 class="h4 mb-0">LightPollutionAwareness.Com</h1>
+        </div>
+        <nav class="navbar navbar-expand-lg">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link text-white" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="about.html">About</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="issue.html">What's the Issue?</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="map.html">Interactive Map</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="resources.html">Resources</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
     </div>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="issue.html">What's the Issue?</a></li>
-            <li><a href="map.html">Interactive Map</a></li>
-            <li><a href="resources.html">Resources</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
 </header>
-    <!-- Hero Section with the Definition of Light Pollution -->
-    <section class="hero">
-        <div class="hero-overlay">
-            <h2>Let's Define Light Pollution</h2>
-            <p>
-                Light pollution is the excessive or misdirected use of artificial light, primarily affecting urban areas. 
-                According to Britannica, it is defined as “unwanted or excessive artificial light that degrades environmental quality” 
-                and disrupts ecosystems. It manifests in forms such as skyglow, glare, and light trespass.
-            </p>
-        </div>
-    </section>
 
-    <!-- Section 1: Image Left, Text Right -->
-    <section class="issue-content">
-        <div class="image-column">
-            <img src="images/skyglow.jpg" alt="Light Pollution Illustration">
+<!-- Hero Section with the Definition of Light Pollution -->
+<section class="hero text-center text-white py-5" style="background-image: url('images/night.jpg'); background-size: cover; background-position: center;">
+    <div class="container">
+        <h2>Let's Define Light Pollution</h2>
+        <p>Light pollution is the excessive or misdirected use of artificial light, primarily affecting urban areas. According to Britannica, it is defined as “unwanted or excessive artificial light that degrades environmental quality” and disrupts ecosystems. It manifests in forms such as skyglow, glare, and light trespass.</p>
+    </div>
+</section>
+
+<!-- Section 1: Image Left, Text Right -->
+<section class="issue-content container my-5">
+    <div class="row align-items-center">
+        <div class="col-md-6">
+            <div id="slideshow-container" class="position-relative">
+                <img id="slideshow1" src="images/skyglow.jpg" class="img-fluid rounded shadow" alt="Light Pollution Illustration">
+            </div>
         </div>
-        <div class="text-column">
+        <div class="col-md-6">
             <h2>Is Light Pollution Really Pollution?</h2>
-            <p>
-                Light pollution refers to the unwanted or excessive use of artificial light, which disrupts ecosystems and wastes energy. 
-                It has various forms:
-            </p>
-            
-            <p> <strong>Skyglow</strong>: The bright orange-pink glow that hangs over cities at night.</p>
-            <p>  <strong>Glare</strong>: The effect produced when the eyes are exposed to bright light, especially dangerous when driving.</p>
-            <p> <strong>Light Trespass</strong>: Light that spills over into areas where it is not needed.</p>
-            
-            <p>
-                Light pollution might seem less harmful than air or water pollution, but it disrupts natural cycles and wastes energy.
-            </p>
+            <p><br><br>Light pollution refers to the unwanted or excessive use of artificial light, which disrupts ecosystems and wastes energy. It has various forms:</p>
+            <ul>
+                <li><strong>Skyglow</strong>: The bright orange-pink glow that hangs over cities at night.</li>
+                <li><strong>Glare</strong>: Intense light that makes it difficult to see, especially dangerous when driving.</li>
+                <li><strong>Light Trespass</strong>: Light that spills over into areas where it is not needed.</li>
+            </ul>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Section 2: Text Left, Image Right -->
-    <section class="issue-content">
-        <div class="text-column">
+<!-- Section 2: Text Left, Image Right -->
+<section class="issue-content container my-5">
+    <div class="row align-items-center">
+        <div class="col-md-6 order-md-2">
+            <img src="images/map.jpg" alt="Light Pollution Map of the Philippines" class="img-fluid rounded shadow">
+        </div>
+        <div class="col-md-6">
             <h2>The Current Situation in the Philippines</h2>
-            <p>
-                In the Philippines, light pollution is rapidly increasing, particularly in urban areas like Metro Manila, Cebu, and Davao. 
-                A light pollution map shows that Metro Manila's night sky has a radiance value of 50-70, making it impossible to see stars even at the zenith.
-                A study in Pasig City found that 59.73% of residents experience bright night skies, with only 3.77% reporting pitch-black conditions.
-            </p>
-            <p><strong>Sources:</strong></p>
+            <p><br><br>In the Philippines, light pollution is rapidly increasing, particularly in urban areas like Metro Manila, Cebu, and Davao. A light pollution map shows that Metro Manila's night sky has a radiance value of 50-70, making it impossible to see stars even at the zenith.</p>
+            <p><br><br><strong>Sources:</strong></p>
             <ul>
                 <li>De Luna, K.C., & Luna, H.C., Light Pollution Study in Pasig City</li>
                 <li>DOE, Philippine Power Statistics 2020</li>
             </ul>
         </div>
-        <div class="image-column">
-            <img src="images/map.jpg" alt="Light Pollution Map of the Philippines">
-        </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Section 3: Image Left, Text Right -->
-    <section class="issue-content">
-        <div class="image-column">
-            <img src="images/wildlife.jpg" alt="Effects of Light Pollution on Wildlife">
+<!-- Section 3: Image Left, Text Right -->
+<section class="issue-content container my-5">
+    <div class="row align-items-center">
+        <div class="col-md-6">
+            <div id="slideshow-container" class="position-relative">
+                <img id="slideshow2" src="images/wildlife.jpg" class="img-fluid rounded shadow" alt="Effects of Light Pollution on Wildlife and Humans">
+            </div>
         </div>
-        <div class="text-column">
-            <h2>Effects on Humans and the Ecosystem</h2>
-            <p><strong>Impact on Humans:</strong> Exposure to artificial light at night disrupts the body’s production of melatonin, a hormone that regulates sleep cycles. Reduced melatonin production is linked to various health issues including sleep disorders, stress, and even cancer.</p>
-            <p><strong>Impact on Wildlife:</strong> Light pollution affects animal behavior, particularly for nocturnal creatures such as sea turtles and migratory birds. Artificial light confuses these animals, leading to disorientation and death.</p>
-            <p><strong>Sources:</strong></p>
+        <div class="col-md-6">
+            <h2><br><br>Effects on Humans and the Ecosystem</h2>
+            <p><br><br><strong>Impact on Humans:</strong> Exposure to artificial light at night disrupts the body’s production of melatonin, a hormone that regulates sleep cycles. Reduced melatonin production is linked to sleep disorders, stress, and even cancer.</p>
+            <p><strong>Impact on Wildlife:</strong> Light pollution affects animal behavior, particularly nocturnal creatures such as sea turtles and migratory birds. Artificial light confuses these animals, leading to disorientation and death.</p>
+            <p><br><br><strong>Sources:</strong></p>
             <ul>
                 <li>WWF Philippines, Impact of Light Pollution on Wildlife</li>
                 <li>International Dark-Sky Association, Effects of Light Pollution</li>
             </ul>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Section 4: Text Left, Image Right -->
-    <section class="issue-content">
-        <div class="text-column">
+<!-- Section 4: Text Left, Image Right -->
+<section class="issue-content container my-5">
+    <div class="row align-items-center">
+        <div class="col-md-6">
             <h2>Why Should We Care?</h2>
-            <p>
-                Light pollution not only impacts wildlife and human health but also contributes to climate change by increasing energy consumption. 
-                Lighting accounts for nearly 20% of the world’s electricity use, generating nearly 2 billion tons of carbon dioxide annually. 
-                Reducing unnecessary outdoor lighting can have a significant impact on both health and the environment.
-            </p>
-            <p><strong>Sources:</strong></p>
+            <p><br><br>Light pollution not only impacts wildlife and human health but also contributes to climate change by increasing energy consumption. Lighting accounts for nearly 20% of the world’s electricity use, generating nearly 2 billion tons of carbon dioxide annually. Reducing unnecessary outdoor lighting can have a significant impact on both health and the environment.</p>
+            <p><br><br><strong>Sources:</strong></p>
             <ul>
                 <li>International Dark-Sky Association, Why Light Pollution Matters</li>
                 <li>WWF Philippines, Environmental Stewardship and Light Pollution</li>
             </ul>
         </div>
-        <div class="image-column">
-            <img src="images/data.jpg" alt="Energy Consumption due to Light Pollution">
+        <div class="col-md-6">
+            <img src="images/data.jpg" alt="Energy Consumption due to Light Pollution" class="img-fluid rounded shadow">
         </div>
-    </section>
-
-    <!-- Supporting Visuals Section -->
-    <section class="issue-content">
-        <div class="text-column">
-            <h2>Shouldn’t I be focusing my efforts and energy on the most significant environmental crisis of our time? </h2>
+    </div>
+</section>
+<!-- Supporting Visuals Section -->
+<section class="issue-content container my-5">
+    <div class="row align-items-center">
+        <div class="col-md-6">
+            <h2>Why bother?</h2>
+            <p><br><br>Shouldn’t I be focusing my efforts and energy on the most significant environmental crisis of our time? </p>
             <p>
                 It’s a valid question, but not surprisingly, it seems that there are important connections between the two. 
             </p>
@@ -126,20 +128,58 @@
                 John Muir said that in nature "when we try to pick out anything by itself, we find it hitched to everything else in the Universe” As it turns out, light pollution is hitched to global climate change in important and compelling ways, and protecting the night sky is paramount to avoiding worst-case climate scenarios.
             </p>
         </div>
-        <div class="image-column">
-            <img src="images/effects.png" alt="Infographic on Light Pollution Effects">
+        <div class="col-md-6">
+            <img src="images/effects.png" alt="Infographic on Light Pollution Effects" class="img-fluid rounded shadow">
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Call to Action Section -->
-    <section class="call-to-action">
-        <p>Let’s work together to protect the night sky. Take action today!</p>
-    </section>
+<!-- Call to Action Section -->
+<section class="bg-primary text-white text-center py-4 mt-5">
+    <p class="lead mb-0">Let’s work together to protect the night sky. Take action today!</p>
+</section>
 
-    <!-- Footer Section -->
-    <footer>
-        <p>Sources: International Dark-Sky Association, WWF Philippines, DOE</p>
-    </footer>
+<!-- Footer Section -->
+<footer class="bg-dark text-white text-center py-3">
+    <p>Sources: International Dark-Sky Association, WWF Philippines, DOE</p>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+    // Array of images for the slideshow
+    const imageset1 = [
+        'images/skyglow.jpg',
+        'images/glare.jpg',
+        'images/tresspass.jpg'
+    ];
+    const imageset2 = [
+        'images/wildlife.jpg',
+        'images/wildlife2.jpg',
+        'images/human.jpg',
+        'images/wildlife3.jpg'
+    ];
+
+    let currentIndex = 0;
+    const slideshow1 = document.getElementById('slideshow1');
+    const slideshow2 = document.getElementById('slideshow2');
+
+    // Function to change the image every 4 seconds
+    function changeImage() {
+        currentIndex = (currentIndex + 1) % imageset1.length;  // Loop back to the first image
+        slideshow1.src = imageset1[currentIndex];
+        slideshow2.src = imageset2[currentIndex];
+    }
+    function changeImage2() {
+        currentIndex = (currentIndex + 1) % imageset2.length;  // Loop back to the first image
+        slideshow2.src = imageset2[currentIndex];
+    }
+
+    // Set interval to change images
+    setInterval(changeImage, 6000);
+    setInterval(changeImage2, 8000);
+</script>
 
 </body>
 </html>
